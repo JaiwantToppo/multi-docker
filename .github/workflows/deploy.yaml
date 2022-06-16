@@ -18,7 +18,7 @@ jobs:
       - run: docker build -t toppo918/multi-server ./server
       - run: docker build -t toppo918/multi-worker ./worker
 
-      - run: docker push -t toppo918/multi-client
-      - run: docker push -t toppo918/multi-nginx
-      - run: docker push -t toppo918/multi-server
-      - run: docker push -t toppo918/multi-worker
+      - run: docker push toppo918/multi-client
+      - run: docker push toppo918/multi-nginx
+      - run: docker push toppo918/multi-server
+      - run: docker push toppo918/multi-worker
